@@ -1,0 +1,7 @@
+git init
+
+git commit -m "some commands"
+
+git remote add reponame https://github.com/finn1990/reponame.git
+
+git push -u reponame master

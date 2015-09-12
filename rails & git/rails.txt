@@ -1,0 +1,32 @@
+更新 Linux
+$ sudo apt-get update
+$ sudo apt-get upgrade
+
+安裝必要套件
+$ sudo apt-get install build-essential bison openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev
+
+查看git, Ruby, rails 版本
+$ git --version
+$ ruby -v
+$ rails -v
+
+RubyGems 常用指令
+gem -v # RubyGems 版本
+gem update --system 升級 RubyGems 的版本
+gem install gem_name 安裝某個套件
+gem install gem_name --no-ri --no-rdoc 安裝但不包含文件
+gem list 列出安裝的套件
+gem update gem_name 更新最新版本
+gem update 更新所有安裝的 Gems
+gem install -v x.x.x gemname 安裝特定版本
+gem uninstall gem_name 反安裝某套件
+
+有修改 GemFile 就要執行
+$ bundle install
+
+安裝 javascript 的 interpreter
+gem 'therubyracer'
+$ bundle install
+重啟專案
+$ rails s 
+

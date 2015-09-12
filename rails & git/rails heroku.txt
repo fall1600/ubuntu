@@ -1,0 +1,23 @@
+登入 heroku
+$ heroku login
+
+初始化 project
+$ rails new projectname -d postgresql
+$ cd projectname
+$ rails g controller pages
+$ git init
+$ git add .
+$ git commit -m 'init'
+
+APT 安裝
+$ sudo apt-get install -y postgresql ligpq-dev
+$ sudo -u postgres createuser fall1600 -d
+
+安裝 rails_12factor
+gem 'rails_12factor', group: :production
+$ bundle install
+
+Heroku 初始化
+$ heroku create projectname
+$ git push heroku master
+$ heroku run rake db:migrate

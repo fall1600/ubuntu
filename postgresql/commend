@@ -1,0 +1,10 @@
+login postgre with superuser
+$ sudo su - postgres
+
+createuser
+$ createuser username -d (-u)
+
+createdb
+$ createdb databasename
+
+from: http://stackoverflow.com/questions/11919391/postgresql-error-fatal-role-username-does-not-exist

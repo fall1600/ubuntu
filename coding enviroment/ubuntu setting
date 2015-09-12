@@ -1,0 +1,8 @@
+boot brightness setting
+  check this site:
+    http://ubuntuhandbook.org/index.php/2014/04/save-screen-brightness-settings-in-ubuntu-14-04/
+  
+  modify /etc/rc.local
+    echo 0 > /sys/class/backlight/acip_video0/brightness // x230i set 7 will be good
+    exit 0
+

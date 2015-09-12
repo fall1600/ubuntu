@@ -1,0 +1,14 @@
+http://stackoverflow.com/questions/18288870/sublime-text-3-how-to-change-the-font-size-of-the-file-sidebar
+
+  1. Navigate to Sublime Text -> Preferences -> Browse Packages
+  2. Open the User directory
+  3. Create a file named Default.sublime-theme with the follwing content (modify font.size as required):
+
+[
+    {
+        "class": "sidebar_label",
+        "color": [0, 0, 0],
+        "font.bold": false,
+        "font.size": 12
+    },
+]
